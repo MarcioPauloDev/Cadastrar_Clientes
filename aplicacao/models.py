@@ -1,4 +1,4 @@
-# Classe que representa um cliente no sistema
+# Classe que representa um cliente no sistema.
 class Cliente:
     def __init__(
         self,
@@ -8,6 +8,7 @@ class Cliente:
         endereco=None,
         estado_civil=None,
         documento=None,
+        cpf_cnpj = None,
         cadastro_ativo=True,
         situacao_profissional=None
     ):
@@ -17,6 +18,7 @@ class Cliente:
         self.endereco = endereco
         self.estado_civil = estado_civil
         self.documento = documento
+        self.cpf_cnpj = cpf_cnpj
         self.cadastro_ativo = cadastro_ativo
         self.situacao_profissional = situacao_profissional
 
@@ -25,5 +27,5 @@ class Cliente:
         return (
             f"Cliente(nome={self.nome}, email={self.email}, telefone={self.telefone}, "
             f"endereco={self.endereco}, estado_civil={self.estado_civil}, documento={self.documento}, "
-            f"cadastro_ativo={self.cadastro_ativo}, situacao_profissional={self.situacao_profissional})"
+            f"cpf_cnpj={self.cpf_cnpj} cadastro_ativo={self.cadastro_ativo}, situacao_profissional={self.situacao_profissional})"
         )
